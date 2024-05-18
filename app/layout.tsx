@@ -31,7 +31,7 @@ export default function RootLayout({
     <html lang="en" className={`${syne.className} ${inter.className}`}>
       <link
         rel="icon"
-        href="/svg/logo-grey.svg"
+        href="/svg/icon.ico"
         type="image/<generated>"
         sizes="<generated>"
       />
