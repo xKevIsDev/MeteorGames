@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* import syne font*/
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonts-syne), sans-serif;
+  color: #ffffff;
+}
+
+.coming-soon-page-background {
+  background-image: url("../public/svg/background.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.slogan {
+  font-size: 80px;
+  font-weight: 400;
+  line-height: 96px;
+  letter-spacing: 0em;
+  margin-top: 15vh;
+}
+.text_gradient {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  color: transparent;
+  background: linear-gradient(
+    180.47deg,
+    #ffffff -24.51%,
+    rgba(20, 56, 110, 0) 147.62%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.animated-text {
+  --bg-size: 400%;
+  --color-one: #EC4899;
+  --color-two: #3C80F4;
+  background: linear-gradient(
+                90deg,
+                var(--color-one),
+                var(--color-two),
+                var(--color-one)
+              ) 0 0 / var(--bg-size) 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  animation: text-animation 8s infinite linear;
+}
+
+@keyframes text-animation {
+  to {
+    background-position: var(--bg-size) 0;
+  }
+}
